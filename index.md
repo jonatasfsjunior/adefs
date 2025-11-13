@@ -1,8 +1,6 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Início"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+Em Construção
