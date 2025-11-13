@@ -1,7 +1,12 @@
+.nav-bar {
+  background-color: $primary;
+}
+
 figure.navbar-logo {
    margin-right: 10px;
  
    img {
-     height: 40px;
+     width: 1rem;
+     height: auto;
    }
  }
