@@ -1,9 +1,13 @@
 .nav-bar {
   background-color: $primary;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
 }
 
 figure.navbar-logo {
-   margin-right: 10px;
+   margin-right: 0px;
  
    img {
      width: 4rem;
