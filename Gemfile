@@ -10,4 +10,4 @@ group :jekyll_plugins do
     gem 'jekyll-redirect-from'
 end
 
-gem "bulma", "~> 1.0.4"
+#gem "bulma", "~> 1.0.4"
