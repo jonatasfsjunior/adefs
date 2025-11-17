@@ -2,6 +2,7 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
+@import "colors";
 @import "../node_modules/bulma/sass";
 @import "../node_modules/bulma/sass/utilities/mixins";
 
@@ -12,5 +13,3 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
-
-$primary: rgb(0, 0, 0)
