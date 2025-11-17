@@ -3,21 +3,24 @@
   top: 0;
   left: 0;
   right: 0;
-   min-height: clamp(4rem, 5vw, 7.5rem);
+  min-height: clamp(4rem, 5vw, 7.5rem);
   background-color: $primary;
 }
 
 .navbar-home {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   text-decoration: none;
 }
 
 .nav-text {
   color: white;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
+  font-family: 'Noto Sans';
+  font-weight: bold
+  font-variant: small-caps;
 }
 
 figure.navbar-logo {
