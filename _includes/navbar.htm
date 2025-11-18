@@ -39,7 +39,7 @@
         </a>
 
         {% if site.data.navbar %}
-          {% for item in site.data.navbar %}
+          {% for item in site.data.navbar-items %}
 
             {% if item.dropdown %}
               <div
@@ -50,7 +50,7 @@
                   href="{{ item.link | relative_url }}"
                   class="navbar-link {% if page.url contains item.link %}is-active{% endif %}"
                 >
-                  {{ item.name }}
+                  <h1 class="nav-text">{{ item.name }}</h1>
                 </a>
 
                 <div class="navbar-dropdown">
@@ -59,7 +59,7 @@
                       href="{{ subitem.link | relative_url }}"
                       class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}"
                     >
-                      {{ subitem.name }}
+                      <h1 class="nav-text">{{ subitem.name }}</h1>
                     </a>
                   {% endfor %}
                 </div>
