@@ -3,20 +3,14 @@ import { Inter } from 'next/font/google';
 import "./globals.css";
 import Header from './components/Header';
 
-// --- DEFINIÇÃO DOS DADOS DO HEADER NO LAYOUT RAÍZ ---
-// O Layout Raiz é o 'Pai' e fornece os dados.
-const SITE_TITLE = "ADEFS"; // Exemplo de Título
+const SITE_TITLE = "ADEFS";
 const NAV_LINKS = [
     { name: "Início", url: "/" },
     { name: "Sobre", url: "/about" },
-    { name: "Projetos", url: "/projects" },
-    { name: "Contato", url: "/contact" },
 ];
-// ----------------------------------------------------
 
 const inter = Inter({ 
   subsets: ['latin'],
-  // O 'variable' permite que se use 'font-inter' como uma classe CSS (Tailwind)
   variable: '--font-inter',
 });
 
