@@ -2,29 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 
-// Define o tipo para o tema
 type Theme = 'light' | 'dark';
 
-/**
- * Componente de botão para alternar entre o tema claro e escuro.
- */
 const ThemeToggler: React.FC = () => {
-    // 1. Estado para gerenciar o tema atual
-    // Tenta carregar o tema do localStorage ou assume 'light'
     const [theme, setTheme] = useState<Theme>(() => {
         if (typeof window !== 'undefined') {
-            // Verifica a preferência do usuário ou usa 'light' como padrão
             const savedTheme = localStorage.getItem('theme') as Theme;
             if (savedTheme) return savedTheme;
-            // Verifica a preferência do sistema operacional
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 return 'dark';
             }
         }
-        return 'light'; // Padrão se não houver preferência ou se estiver no servidor
+        return 'light';
     });
 
-    // 2. useEffect para aplicar a classe 'dark' e salvar a preferência
     useEffect(() => {
         const root = document.documentElement; // O elemento <html>
         

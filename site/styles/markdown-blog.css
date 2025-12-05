@@ -1,0 +1,8 @@
+/* Estilos específicos para as Postagens de Blog */
+.blog-post-content h1 {
+    color: darkgreen; /* Exemplo: Título verde escuro nos Posts */
+}
+
+.blog-post-content a {
+    color: orange;
+}

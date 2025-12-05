@@ -1,0 +1,9 @@
+/* Estilos específicos para a Home Page */
+.homepage-markdown h1 {
+    color: navy; /* Exemplo: Título azul marinho na Home */
+    font-weight: 900;
+}
+
+.homepage-markdown p {
+    line-height: 1.8;
+}
